@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create account lab</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>    
+            <form action="./procesaformulario.php" class="form" id="form">
+                <section class="form_groupAll">
+                    <h1 class="form_group-h1">Create Account</h1>
+                    <!--Group_nombre-->
+                    <div class="form_group" id="group_nombre">
+                        <label for="nombre" class="form_label">Nombre</label>
+                        <div class="form_group-input">
+                            <input type="text" class="form_input" name="nombre" id="nombre" value="" required>
+                            <img class="form_invalid" src="images/error-icon.svg">
+                            <img class="form_valid" src="images/success-icon.svg">
+                        </div>
+                        <p class="form_input-error">Rellene este campo</p>
+                        <p class="form_input-error2">Solo se admiten caracteres alfabéticos</p>
+                    </div>
+                    <!--Group_email-->
+                    <div class="form_group" id="group_email">
+                        <label for="email" class="form_label">Email</label>
+                        <div class="form_group-input">
+                            <input type="email" class="form_input" name="email" id="email" value="" required>
+                            <img class="form_invalid" src="images/error-icon.svg">
+                            <img class="form_valid" src="images/success-icon.svg">
+                        </div>
+                        <p class="form_input-error">Rellene este campo</p>
+                        <p class="form_input-error2">Email inválido</p>
+                    </div>
+                <!--Group_clave-->
+                <div class="form_group" id="group_clave">
+                    <label for="clave" class="form_label">Clave</label>
+                    <div class="form_group-input">
+                        <input type="password" class="form_input" name="clave" id="clave" value="" required>
+                        <img class="form_invalid" src="images/error-icon.svg">
+                        <img class="form_valid" src="images/success-icon.svg"> 
+                    </div>
+                    <p class="form_input-error">Rellene este campo</p>
+                    <p class="form_input-error2">No debe tener más de 8 caracteres</p>
+                </div>
+                <!--Group_confirmeclave-->
+                <div class="form_group" id="group_confirmeclave">
+                    <label for="group_confirmeclave" class="form_label">Confirme su clave</label>
+                    <div class="form_group-input">
+                        <input type="password" class="form_input" name="confirmeclave" id="confirmeclave" value="" required>
+                        <img class="form_invalid" src="images/error-icon.svg">
+                        <img class="form_valid" src="images/success-icon.svg">
+                    </div>
+                    <p class="form_input-error">Rellene este campo</p>
+                    <p class="form_input-error2">Las contraseñas no coinciden</p>
+                </div>
+                <!--Group_botón-->
+                <div class="form_group-boton">
+                    <button class="boton" type="submit">ENVIAR</button>
+                    <p class="form_alertaexito" id="form_alertaexito">¡Has creado tu cuenta correctamente!</p>
+                </div>
+            </section>
+            </form>
+            <script src="index.js"></script>
+        </main>
+    </body>
+</html>
